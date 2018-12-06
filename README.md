@@ -13,6 +13,7 @@ Practiced data structure and related concepts.
   * GCD
   * Immediate Smallest Element (Arrays)
   * String Permutation
+  * Rotating Array at given distance
 
 # Platforms
   * Ruby
