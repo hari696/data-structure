@@ -1,0 +1,107 @@
+Algorithms:
+  Notations:
+    Big O Notation: Upper Bound
+    Θ Notation: Average
+    Ω Notation: Lower Bound
+
+  Searching:
+    Linear -> Search with all element -> O(n)
+    Binary -> Skip half of the array -> O(Log n)
+    Jump -> Skip with blocks -> O(√n)
+    Interpolation -> Like binary but compute position -> O(log log n)) -> Worst case O(n)
+    Extrapolation -> Identify the range and recursive binary search -> O(Log n)
+
+  Sorting:
+    Selection -> Sort by index ->  O(n^2)
+    Bubble -> One Iteration for each element -> O(n^2)
+    Insertion -> Sort new element on its index -> O(n*2)
+    Heap ->  -> O(n log(n))
+
+  Shortest Path:
+    Using Greedy Algorithm:
+      Dijkstra’s shortest path algorithm
+      Prim’s Minimum Spanning Tree
+------------------------------------------------------------------------------------------------------------------------
+DS:
+  Array:
+    Rotation:
+      M1: Using temp array
+        Time complexity : O(n)
+        Auxiliary Space : O(d)
+
+      M2: Rotate one by one
+        Time complexity : O(n * d)
+        Auxiliary Space : O(1)
+
+      M3: Juggling Algorithm (GCD)
+        Time complexity : O(n)
+        Auxiliary Space : O(1)
+
+      M4: Reversal Algorithm
+        Time Complexity : O(n)
+------------------------------------------------------------------------------------------------------------------------
+  Linked List:
+    Type:
+      Single, Double, Circular
+------------------------------------------------------------------------------------------------------------------------
+  Queue:
+    Enqueue: Add item to queue
+    Dequeue: Remove item to queue
+    Types:
+      Priority -> Element with priority -> O(n)
+------------------------------------------------------------------------------------------------------------------------
+  Trees:
+    Types:
+      Binary Tree:
+        Properties:
+          ******************* Brush Up *******************
+
+        Types:
+          Full (0, 2 Childrens)
+          Complete (All level are filled and leaves are toward left)
+          Perfect (Leaves at same level and all intermediate nodes filled)
+          Balance (Height is O(Log n) - Difference of right and left subtree is 1)
+
+      Binary Search Tree:
+        Left sub tree: Lesser than root node.
+        Right sub tree: Greater than root node.
+        Left and Right should also be a binary search tree.
+
+    Traversal:
+      Time Complexity: O(n)
+      Space Complexity:
+        BFS: More (When tree is more balanced)
+        DFS: More (When tree is less balanced)
+
+      BFS (Breadth First Search)
+        Root, Left, Right
+        Desc:
+          Start searching from Root.
+          Maximum width of Binary Tree at Dept 'h' is 2^h
+        Space Complexity:
+          O(w), w: maximum width of the tree
+        Queue:
+          Stores intermediate nodes
+
+      DFS (Depth First Search)
+        Desc:
+          Start searching from Leaves.
+        Space Complexity:
+          O(h), h: maximum height of the tree
+        Stack:
+          Stores intermediate nodes
+        Types:
+          Inorder (Left, Root, Right)
+          Preorder (Root, Left, Right)
+          Postorder (Left, Root, Right)
+
+      Factor to decide:
+        Extra Space
+        Recursive method calls
+        Root to leaves / Leaves to root
+------------------------------------------------------------------------------------------------------------------------
+  Graph:
+    Adjacency Matrix
+    Adjacency List
+    Vertex(Node), Edge(Connection Line)
+------------------------------------------------------------------------------------------------------------------------
